@@ -3,10 +3,14 @@ import { useState } from "react";
 import { data } from "./users.js";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { CalendarIcon, EditIcon, DeleteIcon, HandIcon } from '../../../Icons/icons.component'
+import { CalendarIcon, EditIcon, DeleteIcon, HandIcon, AdvanceIcon } from '../../../Icons/icons.component'
 import ArticleFilters from "../../../components/ArticleFilters.js";
-import EditPopup from "../../../components/ArticlesAnalysis/EditPopup.js";
+import EditPopup from "../../../components/ArticlesAnalysis/BasicPopup.js";
 import FormCheckInput from "react-bootstrap/esm/FormCheckInput.js";
+import TagPopup from "../../../components/ArticlesAnalysis/TagPopup.js";
+import BasicPopup from "../../../components/ArticlesAnalysis/BasicPopup.js";
+
+
 function Articlelist(){
     const [users, setUsers] = useState(data);
 	const [sorted, setSorted] = useState({ sorted: "id", reversed: false });
@@ -106,7 +110,7 @@ function Articlelist(){
 							
 						<th>
 						{/* <FormCheckInput className="mr-5"/> */}
-						<span style={{ marginRight: 10 }}>Select Article</span>
+						<span style={{ marginRight: 10 }}>Check All</span>
 							</th>
 							
 							<th onClick={sortById}>
@@ -223,10 +227,22 @@ function Articlelist(){
 					onChange={search}
 				/>
 			</div></td>
-			<td><EditPopup/><a href="#"><DeleteIcon/></a></td>
+			<td></td>
 			{/* <td><EditPopup/><a href="#"><DeleteIcon/></a></td> */}
 						</tr>
-						{renderUsers()}
+						<tr>
+						<td><FormCheckInput className="mr-5"/></td>
+                <td>0123</td>
+                <td>Company</td>
+                <td>Tata Motors</td>
+                <td>Tata Motors</td>
+                <td>Mumbai</td>
+                <td>Regional</td>
+                <td>7 Feb 2023</td>
+                <td>Positive</td>
+                <td>Marathi</td>
+                <td className="action-btns"><BasicPopup/><button className="btn btn-primary"><AdvanceIcon/></button></td>
+                </tr>
 						
 						</tbody>
 				</table>

@@ -61,6 +61,9 @@ function VisibilityAnalysis (){
                   </option>
                 </select>
             </div>
+            <div className='col-12 mt-20'>
+                <input type="text" className="form-control" placeholder="Key Message" />
+            </div>
             <div className="col-md-12 mt-10">
               <a href="#" className="addmore float-end">Add More</a>
             </div>

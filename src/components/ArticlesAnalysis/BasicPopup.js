@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { EditIcon } from '../../Icons/icons.component';
+import { BasicIcon } from '../../Icons/icons.component';
 import QualitativeAnalysis from './ArticleSearch/QualitativeAnalysis';
-function EditPopup() {
+function BasicPopup() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -12,7 +12,7 @@ function EditPopup() {
   return (
     <>
       <Button variant="primary" onClick={handleShow} className='edit-button'>
-        <EditIcon/>
+        <BasicIcon/>
       </Button>
 
       <Modal show={show} onHide={handleClose}>
@@ -36,4 +36,4 @@ function EditPopup() {
   );
 }
 
-export default EditPopup;
+export default BasicPopup;

@@ -322,12 +322,12 @@ input:disabled {opacity: 0.5;}
 .ep-info input{margin: 15px 0;}
 .ep-info{margin-top: 50px;}
 .download-formates{
-    min-height: 550px;
+   margin-bottom: 25px;
 }
 .download-formates img{
     width: 100%;
     margin-top: 30px;
-    height: 480px;
+
 }
 .form-details .btn{float: right;}
 .form-details .col-4{position: relative;}
@@ -407,7 +407,7 @@ span.tolltip p{display: none;}
 .article-header p {padding-left: 0; margin-left: 0;}
 .article-header p a{color: #0036b9; margin-right: 3px;}
 .article-header span{padding-left: 0; margin-left: 0; color: #9a9a9a;}
-.article-header{margin-bottom: 25px; border-bottom: 1px solid #9a9a9a; padding-bottom: 15px;}
+.article-header{margin-bottom: 20px;}
 
 .edition-section{display: flex;     margin: 0 0 20px 0; padding: 0;}
 .edition-section p{font-weight: bold; font-size: 18px;     white-space: nowrap;}
@@ -451,25 +451,41 @@ ul.edition-list li a{text-decoration: underline; color: #0036b9; font-size: 16px
 .article-search-filter .btn-primary{float: right; margin-left: 0;}
 .article-search-filter input{padding: 0; margin: 5px 0;}
 .table-options{text-align: right;position: absolute; right: 46px;}
-.table-options button{margin-left: 5px; background-color: #fff; color: #393939; border: 1px solid #9c9c9c; padding: 3px 8px; font-size: 12px;}
+.table-options button{margin-left: 5px; background-color: #fff; color: #393939; border: 1px solid #9c9c9c;font-size: 12px;}
+.table-options button:first-child{background-color: #0036b9; color: #fff; margin-right:25px;     padding: 5px 15px;}
 .article-search-tab ul.pagination{    justify-content: right; padding-right: 5px;}
 .article-search-tab ul.pagination  .page-link{margin-right: 0;}
 .article-search-filter .aldatepicker{width: 100%; display: block;}
 .article-search-filter .aldatepicker input{width: 100%;  padding: 6px 0;}
 .article-search-filter .aldatepicker .CalendarIcon{top: 13px;}
 .article-search-tab table td:last-child{text-align: center;}
-.edit-button{background-color: transparent; padding: 0; border: 0; margin-right:10px;}
-.edit-button:hover{background-color: transparent; padding: 0;}
-.edit-button:visited{background-color: transparent; padding: 0;}
-.edit-button:focus{background-color: transparent; padding: 0;}
+
+
 tr.search-filter input{width: auto !important;}
 .addmore{color: #0036b9; font-size: 14px;}
 .addmore:before{content: "+";     font-size: 18px;}
 .article-search-table .content-box{margin: 15px 25px 35px;}
-.form-check-input:checked{width: auto !important;}
+
 .article-search-table .table-container{overflow: auto;}
 .companylevel{height: 780px; overflow-y: scroll; overflow-x: hidden;}
 .edition-wraper{overflow-x: scroll;  overflow-y: hidden;}
+.product-analysis table th, td {
+    padding: 10px 15px;
+    background-color: #e3e3e3;
+}
+.spokeperson-analysis table th, td {
+    padding: 10px 15px;
+    background-color: #e3e3e3;
+    position: relative;
+}
+.tab-content .form-details svg{float: none; position: inherit;}
+.spokeperson-analysis input{font-size: 14px;}
+.article-search-table .content-box{box-shadow: none; padding: 0;     margin: 0;}
+.article-list-table button{    padding: 3px 6px;}
+.action-btns{display: flex;}
+.action-btns button:first-child{ margin-right: 5px;}
+
+
 
 
 

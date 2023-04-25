@@ -1,10 +1,11 @@
 import React from "react";
 import {Container, Row, Tabs, Tab, Pagination} from  'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { DeleteIcon, EditIcon, TagsIcon } from "../../../Icons/icons.component";
-import EditPopup from "../EditPopup";
+import { DeleteIcon, EditIcon} from "../../../Icons/icons.component";
+
 import useTable from 'react-data-table-component'
 import Articlelist from "../../../views/pages/articles/Articlelist";
+import TagPopup from "../TagPopup";
 function ArticleSearchTable(){
     
     return(
@@ -14,9 +15,10 @@ function ArticleSearchTable(){
         <Container className='article-search-tab'>
             <div className="row table-options">
                 <div className="col-md-12">
-                <button className="btn btn-primary"><TagsIcon/>Tag</button>
+                <TagPopup/>
+                
                 <button className="btn btn-primary">Export</button>
-                <button className="btn btn-primary">Mark as</button>
+                <button className="btn btn-primary">Mark As NA</button>
                 </div>
             </div>
         <Tabs justify variant='pills' defaultActiveKey="tab-1" className='mb-1 p-0'>
@@ -46,7 +48,7 @@ function ArticleSearchTable(){
                 <td>7 Feb 2023</td>
                 <td>Tonality</td>
                 <td>Marathi</td>
-                <td><EditPopup/><a href="#"><DeleteIcon/></a></td>
+                <td><TagPopup/><a href="#"><DeleteIcon/></a></td>
                 </tr>
                 <tr>
                 <td>0123</td>
@@ -58,7 +60,7 @@ function ArticleSearchTable(){
                 <td>7 Feb 2023</td>
                 <td>Tonality</td>
                 <td>Marathi</td>
-                <td><a href="#"><EditPopup/></a><a href="#"><DeleteIcon/></a></td>
+                <td><a href="#"><TagPopup/></a><a href="#"><DeleteIcon/></a></td>
                 </tr>
             </tbody>
            </table> */}
@@ -100,9 +102,9 @@ function ArticleSearchTable(){
                 <td>Periodical</td>
                 <td>Financial Chronicle</td>
                 <td>7 Feb 2023</td>
-                <td>Tonality</td>
+                <td>Negative</td>
                 <td>Marathi</td>
-                <td><a href="#"><EditPopup/></a><a href="#"><DeleteIcon/></a></td>
+                <td><a href="#"><TagPopup/></a><a href="#"><DeleteIcon/></a></td>
                 </tr>
                 <tr>
                 <td>0123</td>
@@ -112,9 +114,9 @@ function ArticleSearchTable(){
                 <td>Mumbai</td>
                 <td>ABC</td>
                 <td>7 Feb 2023</td>
-                <td>Tonality</td>
+                <td>Pasitive</td>
                 <td>Marathi</td>
-                <td><a href="#"><EditPopup/></a><a href="#"><DeleteIcon/></a></td>
+                <td><a href="#"><TagPopup/></a><a href="#"><DeleteIcon/></a></td>
                 </tr>
             </tbody>
            </table>
@@ -157,7 +159,7 @@ function ArticleSearchTable(){
                 <td>7 Feb 2023</td>
                 <td>Tonality</td>
                 <td>Marathi</td>
-                <td><a href="#"><EditPopup/></a><a href="#"><DeleteIcon/></a></td>
+                <td><a href="#"><TagPopup/></a><a href="#"><DeleteIcon/></a></td>
                 </tr>
                 <tr>
                 <td>0123</td>
@@ -169,7 +171,7 @@ function ArticleSearchTable(){
                 <td>7 Feb 2023</td>
                 <td>Tonality</td>
                 <td>Marathi</td>
-                <td><a href="#"><EditPopup/></a><a href="#"><DeleteIcon/></a></td>
+                <td><a href="#"><TagPopup/></a><a href="#"><DeleteIcon/></a></td>
                 </tr>
             </tbody>
            </table>
@@ -201,7 +203,7 @@ function ArticleSearchTable(){
                 <td>7 Feb 2023</td>
                 <td>Tonality</td>
                 <td>Marathi</td>
-                <td><a href="#"><EditPopup/></a><a href="#"><DeleteIcon/></a></td>
+                <td><a href="#"><TagPopup/></a><a href="#"><DeleteIcon/></a></td>
                 </tr>
                 <tr>
                 <td>0123</td>
@@ -213,7 +215,7 @@ function ArticleSearchTable(){
                 <td>7 Feb 2023</td>
                 <td>Tonality</td>
                 <td>Marathi</td>
-                <td><a href="#"><EditPopup/></a><a href="#"><DeleteIcon/></a></td>
+                <td><a href="#"><TagPopup/></a><a href="#"><DeleteIcon/></a></td>
                 </tr>
             </tbody>
            </table>

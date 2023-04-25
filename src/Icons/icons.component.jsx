@@ -332,6 +332,49 @@ export const AngledownIcon = () => (
   </svg>
 );
 
+export const BasicIcon = () => (
+  <svg
+    version="1.1"
+    id="Layer_1"
+    xmlns="http://www.w3.org/2000/svg"
+    x="0px"
+    y="0px"
+    className="icon BasicIcon"
+    viewBox="0 0 20 19"
+    width="20"
+    height="20"
+  >
+<path d="M4 0V19" stroke="#fff"/>
+<rect y="4" width="8" height="3" fill="#fff"/>
+<rect x="12" y="12" width="8" height="3" fill="#fff"/>
+<path d="M16 0V19" stroke="#fff"/>
+  </svg>
+);
+
+
+export const AdvanceIcon = () => (
+  <svg
+    version="1.1"
+    id="Layer_1"
+    xmlns="http://www.w3.org/2000/svg"
+    x="0px"
+    y="0px"
+    className="icon AdvanceIcon"
+    viewBox="0 0 32 19"
+    width="30"
+    height="30"
+  >
+<path d="M4 0V19" stroke="#fff"/>
+<rect y="4" width="8" height="3" fill="#fff"/>
+<rect x="8" y="12" width="8" height="3" fill="#fff"/>
+<path d="M12 0V19" stroke="#fff"/>
+<rect x="16" y="4" width="8" height="3" fill="#fff"/>
+<path d="M20 0V19" stroke="#fff"/>
+<rect x="24" y="12" width="8" height="3" fill="#fff"/>
+<path d="M28 0V19" stroke="#fff"/>
+  </svg>
+);
+
 export const OrganizationInfoIcon = () => (
   <svg
     className="icon OrganizationInfoIcon"

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { DeleteIcon } from "../../../Icons/icons.component";
 function KeywordAnalysis (){
     return(
         <>
@@ -21,7 +21,7 @@ function KeywordAnalysis (){
                         <td>CEO</td>
                         <td>Interview</td>
                         <td>Photo</td>
-                        <td>CFP</td>
+                        <td className="text-center"><a href="#"><DeleteIcon/></a></td>
                       </tr>
                     </tbody>
                   </table>
